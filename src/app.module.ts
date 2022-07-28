@@ -1,13 +1,13 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { GeneralModule } from 'src/general/general.module';
+import { PurchaseInformationModule } from 'src/purchase-information/purchase-information.module';
 
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://admin:admin@cluster0.aecrutf.mongodb.net/?retryWrites=true&w=majority',
+      'mongodb+srv://admin:juHmWCGlFVifddU1@cluster0.aecrutf.mongodb.net/golda-group?retryWrites=true&w=majority',
     ),
-    GeneralModule,
+    PurchaseInformationModule,
   ],
 })
 export class AppModule {}
